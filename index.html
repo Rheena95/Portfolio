@@ -1,49 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>HTML wireframe</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximunm-scale=1,user-scalable=no">
-    <meta http-equiv="x-UA-Compatible" content="IE=edge, chrome=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Rhonda Clark's portfolio">
+    <title>Rhonda Clark</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans:lightitalic|Yeseva+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5a8003b52b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-    <main role="main">
-        <header role="banner">
+    <nav role= "navigation">
+        <ul class= "navBar">
+        <li><a href= "#header">Welcome</a></li>
+        <li><a href= "#aboutMe">About Me</a></li>
+        <li><a href= "#projects">Projects</a></li>
+        <li><a href= "#contact">Contact </a></li>
+        </ul>
+    </nav>
+    <main role= "main">
+    <header id="header">
+        <div class="introImg">
+            <img class= "self" src="./images/Rhonda.jpg" alt="photo of Rhonda Clark">
+        </div>
+        <div class="landing">
             <h1>Rhonda Clark</h1>
-            <h3>Software Engineer | Front End Deveolper </h3>
-            <h5>Github  Linkedin Twitter</h5>
-            <button type="button" name ="projects">See projects</button>
-        </header>
+            <div class="solidLine"></div>
+            <h2 class= "landingText">Software Engineer | Front End Web Developer</h2>
+        </div>
+    </header>
 
-        <section class="about">
-            <h1>About Me</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dolore quae architecto, at fugiat nostrum distinctio iusto neque, in quas nemo suscipit cum eum cupiditate quo, consequatur officia ratione omnis?</p>
+    <section class="aboutMe" id="aboutMe">
+      <h2> About Me</h2>
+      <div class="solidLine"></div>
+      <div class="aboutMeSection">
+          <p>Hello my name is Rhonda Clark, I am 24 years young, living in the Tampa Bay Area. I’m a self-taught developer,
+           I have experience in HTML, CSS, Javascript, jQuery and React. </p>
+  
+          <p>I began to teach myself HTML, CSS & Javascript in early 2019. I explored many different resources from Udemy to Codecademy to fully grasp the concept of every language.
+           In October 2019, I enrolled into Thinkful's Engineering Immersion Program wiht a graduation date of May 2020. After graduation I plan to work as a full time Software Engineer while futhering my education.</p>
+      </div>
+    </section>
+    <section id ="projects">
+      <h2> Projects</h2>
+      <div class="solidLine"></div>
+      <h3>Natural Hair Quiz App</h3>
+      <div class= "projects">
+        <img class= "project" img src="https://www.byrdie.com/thmb/_f9jG3VVai_akdX_Dw4yxfdDBao=/1080x810/filters:fill(auto,1)/main-dc2047c21ee245a98c725eab103a3004.jpg" alt="Quiz App" class="image"/>
+      </div>
+      <p>
+         This app tests your knowledge on natural hair care and maintainence.
+         From basic care to knowlegde about hair itself, giving you feedback after each answer 
+         and giving you a final score.
+      </p>
+      <div class="solidLine"></div>
+      <div class= "projectLink">
+      <ul>
+          <li>Live: <a href= "https://thinkful-ei-heron.github.io/waitstaff-calculator-Shannon/" target="_blank"><i class="fas fa-laptop-code"></i></a></li>
+          <li>Github Repo: <a href= "https://github.com/thinkful-ei-heron/waitstaff-calculator-Shannon" target = "_blank"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
+    </section>                                                                                                                                                                                         
+    <section id= "contact"> 
+        <h2>Contact Information</h2>
+        <div class="solidLine"></div>
+        <ul class= "contactInfo">
+          <li><i class="fas fa-location-arrow"></i> Tampa, Florida</li>
+          <li><i class="fas fa-phone-square-alt"></i> <a href="tel:239-298-6934">239-298-6934</a></li>
+          <li><i class="far fa-envelope"></i> <a href="mailto:Crhonda39@gmail.com" target="_blank"> Crhonda39@gmail.com</a></li>
+          <li class= "contactLinks"> <a href= "https://github.com/Rheena95" target="_blank"><i class="fab fa-github"></i></a><a href= "https://www.linkedin.com/in/rhondaclark95/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
         </section>
+  </main>
+  <footer>
+      &copy; 2019 Rhonda Clark
+  </footer>
 
-        <section>
-            <h1>Skills & Qualifications</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur accusamus, nihil, obcaecati magni eum, dolores fuga illum possimus nemo impedit aspernatur ipsum. Facilis vero, facere enim velit totam dolorum nesciunt.</p>
-        </section>
 
-        <section class="projectsBox">
-            <h1>Projects</h1>
-            <div>
-                <h2>Quiz App</h2>
-                <img src="https://www.byrdie.com/thmb/_f9jG3VVai_akdX_Dw4yxfdDBao=/1080x810/filters:fill(auto,1)/main-dc2047c21ee245a98c725eab103a3004.jpg" alt="Quiz App" class="image"/>
-                <p>Testing your knowledge on natural hair care and maintainence.</p>
-                <a href="https://rheena95.github.io/Natural-Hair-Quiz-App/">Live</a><br>
-                <a href="https://github.com/Rheena95/Natural-Hair-Quiz-App">Git Repo</a>
-            </div>
-        </section>
 
-        <section class="contact">
-            <h2>Connect with Me</h2>
-            <a href="https://www.linkedin.com/in/rhondaclark95/">LinkedIn</a>
-            <a href="https://github.com/Rheena95">GitHub</a>
-            <a href="mailto:Crhonda39@yahoo.com">Email</a>
-        </section>
-    </main>
-    <footer role="content-info">Footer</footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>

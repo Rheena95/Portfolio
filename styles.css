@@ -1,113 +1,322 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+}
+
+
+body {
+  color: #141719;
+  font-family: 'Trebuchet MS', serif;
+  line-height: 1.4;
+}
+
+nav {
+  font-family: 'Trebuchet MS' sans-serif;
+  width:100%;
+  padding: 1% 0;
+  background-color: rgba(158, 153, 160, 0.575);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  text-align: center;
+}
+
+
+.navBar{
+  display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    list-style: none;
+    text-shadow:  rgb(131, 19, 88) 1px 2px 3px;
+}
+.hidden{
+  display:none;
+}
+
+header h1 h2 {
+  font-size: 25px;
+}
+
+.navBar li a {
+    color: rgb(255, 255, 255);
+}
+
+header {
+  background-image: url("./images/bg-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6% 3%;
+  text-align: center;
+  color:#ffffff;
+  min-height: 650px;
+  text-shadow: rgb(131, 19, 88) 1px 2px 3px;
+}
+
+.introImg {
+  margin-top: 1%;
+  margin-bottom:1%;
+  width:80%;
+}
+
+.self {
+  width: 60%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+section {
+  background-color: rgb(255, 255, 255);
+  padding: 6% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(even) {
+  background-color: #81054383;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-family: 'Trebuchet MS', cursive;
+}
+
+
+h2 ,h3 {
+  font-size: 1.3rem;
+  font-family: 'Trebuchet MS', cursive;
+}
+.landingText, .interests {
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+.project{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.interests {
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  width: 90%;
+}
+
+p {
+  width: 90%;
+}
+
+.floating {
+  float: left;
+}
+.contactInfo {
+  width: 100%;
+  list-style:none;
+  padding: 0;
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+}
+
+.solidLine {
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 10px;
+  width: 80%;
+  border-bottom: 3px solid #969772;
+}
+
+.projectLink {
+  width: 90%;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.iconGroup {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 1.3rem;
+  list-style: none;
+  padding: 0;
+}
+
+.iconGroup li {
+  display:inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  color: #141719;
+}
+
+a:hover {
+  color: rgb(105, 2, 71);
+}
+
+a:active {
+  color: rgb(238, 84, 179);
+}
+
+i {
+  margin: 3px;
+}
+
+ul {
+  list-style:none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactLinks {
+  font-size: 2rem;
+}
+
+
+footer {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6%;;
+  width: 100%;
+}
+
+
+@media only screen and (min-width: 350px) {
+  .imgHolder {
+    width: 70%;
   }
-  
-  body {
-    font-family: "Open Sans",
-    sans-serif; 
-    font-size: 20px;
-    color: #444;
-    text-align: center;
-    line-height: 1.5;
+  h1{
+    font-size: 1.3rem;
   }
 
-  .about {
-      margin-top: 0;
+  h2, h3 {
+    font-size: 1.1rem;
   }
+}
 
-  .contact{
-      padding: 20px;
-      height: 60px;
+@media only screen and (min-width: 400px) {
+  .imgHolder {
+    width: 60%;
   }
-  
+}
 
-  .projectsBox {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      text-align: center;
+@media only screen and (min-width: 500px) {
+  .imgHolder {
+    width: 49%;
   }
+}
 
-  .image {
-    width: 20%;
+@media only screen and (min-width: 595px) {
+  .imgHolder {
+    width: 41%;
   }
-  
-  
+}
+
+@media only screen and (min-width: 700px) {
+  html {
+    font-size: 18px;
+  }
   header {
-    padding: 12% 0;
-  }
-  
-  section {
-    min-height: 250px;
-    padding: 6% 0;
-    background-color: #bbb;
-    margin-top: 20px;
-  }
+    flex-direction: row;
+    justify-content: center;
 
-  .projectsBox {
+  }
+  .landing {
+    width: 50%;
+    text-align: center;
+  
+  }
+  .quiz {
+    width: 90%;
+    margin: 10px;
+  }
+  .imgHolder {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    width: 50%;
+    margin: 2%;
   }
-  
-  section:nth-child(even) {
-    background-color: #ddd;
+  p, .interests {
+    width: 70%;
   }
-  
-  footer {
-    padding: 1% 0;
-    background-color: #aaa;
-    margin-top: 10px;
+  .dashedLine {
+    width: 60%;
   }
 
-  @media screen and (max-width: 1024px) {
-    body {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      margin: 0;
-    }
-  
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: auto;
-    }
-  
-  
-    h1 {
-      font-size: 23px;
-      letter-spacing: 2px;
-      margin-top: -2px;
-    }
-  
-  }
-  
-  @media screen and (max-width: 780px) {
-    header {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      margin-top: 30px;
-      padding-left: 5px;
-      padding-right: 5px;
-      position: inherit;
-    }
-  
-    h1,
-    h3 {
-      font-size: 18px;
-    }
 
-    .contact {
-      height: 20px;
-    }
+}
 
-    .image {
-      width: 40%;
-    }
-  
+@media only screen and (min-width: 750px) {
+  .imgHolder {
+    width: 45%;
   }
+}
+
+@media only screen and (min-width: 800px) {
+  .imgHolder {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .imgHolder {
+    width: 35%;
+  }
+  p, .interests {
+    width: 60%;
+  }
+  .dashedLine {
+    width: 50%;
+  }
+  html {
+    font-size: 20px;
+  }
+
+  .landing {
+    font-size: 85px;
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+  .imgHolder {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html, body {
+    font-size: 22px;
+  }
+
+.imgHolder {
+   width: 25%;
+  }
+}
